@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+.movie-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fav-button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: gold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #42b983;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
